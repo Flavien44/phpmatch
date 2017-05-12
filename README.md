@@ -25,6 +25,8 @@ sudo apt-get install phpunit
 ### Windows
 https://blog.jetbrains.com/webide/2013/03/phpunit-installation-via-composer-in-phpstorm/
 
+## Installer XDebug
+sudo apt-get install php7.0-xdebug
 
 ## Configurer l'IDE
 ### Ajouter les plugins
