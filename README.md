@@ -5,14 +5,21 @@ Projet expérimental pour tester phpunit
 https://waffle.io/mdautrey/phpmatch/join
 
 # Installation de PHPUnit
-1) Installer PHP7
-Pour Windows :
+## Installer PHP7
+### Pour Windows :
 http://windows.php.net/download/
 
-Pour debian :
+### Pour debian :
 https://angristan.fr/installer-php-7-debian-8-jessie-depot-dotdeb/
 
-Pour ubuntu
+### Pour ubuntu :
 sudo apt-get install -y php7.0
 
-# 
+
+## Installer phpunit
+### Linux
+https://phpunit.de/getting-started.html
+
+## Configurer l'IDE
+
+
