@@ -18,7 +18,11 @@ sudo apt-get install -y php7.0
 
 ## Installer phpunit
 ### Linux
-https://phpunit.de/getting-started.html
+sudo apt-get install phpunit
+
+### Windows
+
+
 
 ## Configurer l'IDE
 
