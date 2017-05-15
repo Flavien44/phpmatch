@@ -13,10 +13,10 @@ sudo dpkg -l | grep php
 
 ### Supprimer PHP5 si installé sur la machine
 ```
-sudo apt-get remove php*
+sudo apt-get purge php*
 ```
 
-### Purger
+### Supprimer les dépendants orphelins
 ```
 sudo apt-get autoremove
 ```
@@ -89,6 +89,8 @@ atom EmailTest.php
 ```
 Copier coller du fichier EmailTest.php
 
+
+### Lancer le test unitaire
 ```
 phpunit --bootstrap Email.php EmailTest.php
 ```
