@@ -34,6 +34,3 @@ nodejs server.js IMIE
 
 Aller sur http://localhost:8080/ pour vérifier que tout fonctionne correctement.
 
-
-
-
