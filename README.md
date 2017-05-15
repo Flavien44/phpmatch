@@ -1,4 +1,7 @@
 # phpmatch
+## Description du projet
+- Gestion des scores des matches en PHP
+- Projet expérimental pour tester phpunit
 
 ## Installation PHP7 et PHPUnit
 ### Vérfier que l'utilisateur est bien sudo
@@ -73,7 +76,7 @@ sudo mv phpunit.phar /usr/local/bin/phpunit
 phpunit --version
 ```
 
-### Faire le test PHPUnit sur l'exemple fournie par les développeurs
+### Faire le test PHPUnit sur l'exemple fourni par les développeurs
 ```
 cd
 mkdir phptest
@@ -95,32 +98,40 @@ Copier coller du fichier EmailTest.php
 phpunit --bootstrap Email.php EmailTest.php
 ```
 
-
-
-Ajouter le
-
-
-
+## Mise en place de l'environnement de développement
 ### Installer git sur la machine
 ```
 sudo apt-get install git
 ```
+
 ### Clone du répertoire du projet
 ```
+whoami
 cd
-git clone 
-
-
-
-
-Gestion des scores des matches en PHP
-Projet expérimental pour tester phpunit
-
-## Vérifier le fonctionnement de phpunit
+git clone https://github.com/mdautrey/phpmatch.git
+cd phpmatch
+git remote show
+git remote show origin
 ```
-cd phpunitexample
-phpunit --bootstrap Email.php EmailTest.php
+- Faire un fork dans github
+- Récupérer l'URL du fork <URLFORK>
+
 ```
+git remote add fork <URLFORK>
+git remote show
+git remote show fork
+```
+
+si erreur dans la manipulation, possibilité de repartir de zéro :
+```
+cd
+rm -fr phpmatch
+```
+
+
+
+
+
 
 ## Finaliser le mini-projet de vendredi
 A partir de l'exemple et des spécifications définies vendredi, écrire les tests et le code de l'objet match.
