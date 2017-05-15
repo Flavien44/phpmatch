@@ -23,6 +23,7 @@ sudo apt-get autoremove
 
 ### Démarrer l'installation PHP7
 Pb : PHP7 n'est pas dans les dépôts officiels de Debian => il faut donc ajouter un dépôt externe qui contiennent PHP7
+
 ```
 cd /etc
 ls | grep apt
@@ -31,6 +32,56 @@ cat sources.list
 ```
 
 Page pour installer PHP7 dans debian : https://angristan.fr/installer-php-7-debian-8-jessie-depot-dotdeb/
+
+### Modifier la liste des paquets en ajoutant le dépôt dotdeb
+```
+sudo su
+cd /etc/apt/sources.list.d
+touch dotdeb.list
+atom dotdeb.list
+```
+
+Ajouter la ligne suivante :
+
+deb http://packages.dotdeb.org jessie all
+
+- Sauvegarder la modification et quitter
+
+Installer PHP7
+
+```
+exit
+sudo apt update
+sudo apt install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-gd php7.0-mcrypt php7.0-msgpack php7.0-memcached php7.0-intl php7.0-sqlite3 php7.0-gmp php7.0-geoip php7.0-mbstring php7.0-xml php7.0-zip
+```
+### Vérification
+```
+php --version
+```
+
+### Installation de PHPUnit
+https://phpunit.de/getting-started.html
+```
+cd
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+```
+
+### Vérification PHPUnit OK
+```
+phpunit --version
+```
+
+### Installer git sur la machine
+```
+sudo apt-get install git
+```
+### Clone du répertoire du projet
+```
+cd
+git clone 
+
 
 
 
