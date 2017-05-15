@@ -73,6 +73,32 @@ sudo mv phpunit.phar /usr/local/bin/phpunit
 phpunit --version
 ```
 
+### Faire le test PHPUnit sur l'exemple fournie par les développeurs
+```
+cd
+mkdir phptest
+cd phptest
+atom Email.php
+```
+Copier coller du fichier Email.php fourni par phpunit.de en version 7.0
+
+Sauvegarder/quitter
+
+```
+atom EmailTest.php
+```
+Copier coller du fichier EmailTest.php
+
+```
+phpunit --bootstrap Email.php EmailTest.php
+```
+
+
+
+Ajouter le
+
+
+
 ### Installer git sur la machine
 ```
 sudo apt-get install git
