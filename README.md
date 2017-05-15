@@ -106,11 +106,32 @@ sudo apt-get install git
 
 ### Clone du répertoire du projet
 ```
+whoami
 cd
 git clone https://github.com/mdautrey/phpmatch.git
+cd phpmatch
 git remote show
 git remote show origin
 ```
+- Faire un fork dans github
+- Récupérer l'URL du fork <URLFORK>
+
+```
+git remote add fork <URLFORK>
+git remote show
+git remote show fork
+```
+
+si erreur dans la manipulation, possibilité de repartir de zéro :
+```
+cd
+rm -fr phpmatch
+```
+
+
+
+
+
 
 ## Finaliser le mini-projet de vendredi
 A partir de l'exemple et des spécifications définies vendredi, écrire les tests et le code de l'objet match.
